@@ -1,4 +1,4 @@
-import useCartStore from "../../stores/cartStore"
+import useCartStore from "../stores/cartStore"
 import PropTypes from "prop-types"
 
 const CartItemCard = ({ item }) => {

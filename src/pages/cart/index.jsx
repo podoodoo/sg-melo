@@ -1,5 +1,5 @@
 import useCartStore from "../../stores/cartStore"
-import CartItemCard from "./CartItemCard"
+import CartItemCard from "../../components/CartItemCard"
 
 function Cart() {
     const { items } = useCartStore()
