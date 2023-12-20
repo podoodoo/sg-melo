@@ -1,13 +1,11 @@
 import useCartStore from "../../stores/cartStore"
 import CartItemCard from "../../components/CartItemCard"
+import { calculateTotal } from "../../utils/utils.js"
 
 function Cart() {
     const { items } = useCartStore()
 
-    const total = items.reduce(
-        (sum, item) => sum + item.price * item.quantity,
-        0
-    )
+    const total = calculateTotal(items)
 
     return (
         <div className='container mx-auto mt-8'>
