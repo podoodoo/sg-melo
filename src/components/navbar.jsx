@@ -2,11 +2,7 @@ import { NavLink } from "react-router-dom"
 import useCartStore from "../stores/cartStore"
 
 function Navbar() {
-    const { items } = useCartStore()
-    const totalItemsInCart = items.reduce(
-        (total, item) => total + item.quantity,
-        0
-    )
+    const { getTotalItemsInCart } = useCartStore()
 
     return (
         <nav className='flex flex-col items-center justify-between w-full p-12 mb-4 bg-white sm:grid sm:grid-cols-3 gap-y-4'>
@@ -19,7 +15,8 @@ function Navbar() {
             </div>
             <NavLink to='/cart'>
                 <button className='float-right px-4 py-2 text-xl text-white bg-black'>
-                    Cart{totalItemsInCart > 0 && ` (${totalItemsInCart})`}
+                    Cart
+                    {getTotalItemsInCart() > 0 && ` (${getTotalItemsInCart()})`}
                 </button>
             </NavLink>
         </nav>
