@@ -1,5 +1,6 @@
 // utils.test.js
 import { calculateTotal } from "../utils/utils.js"
+import { describe, expect, it } from "vitest"
 
 describe("calculateTotal", () => {
     it("calculates the total price correctly for items", () => {
