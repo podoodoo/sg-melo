@@ -63,6 +63,10 @@ Uses a modern tech stack for a clean, responsive, and responsive e-commerce appl
 
 For further improvements to achieve a more robust application, different shop category pages can be created based on the categories from the API. Additional improvements can be made for a better user experience such as toasts/notifications, filter function, individual item selection, graphics, user login, sessions, etc. React Suspense can be used in place of or in conjunction with React NavLinks. Error handling can also be improved from fetching from the API as well as integration and/or e2e testing.
 
+How I approached creating this project was first going through some React examples of simple ecommerce sites for inspiration and to minimize reinventing the wheel. Along the way, I made a list of the tech stacks I could utilize. React & Nodejs was suggested to me from a earlier discussion so I went along with that. Vite, TailwindCSS, and Zustand were used because I wanted a truly minimal viable product. Considered were Redux and Context API for state management, MUI and ChakraUI for styling. For testing, I tried using Jest but configuring babel for Vite gave me headaches so I used Vitest. ChatGPT helped too.
+
+For file structure, I usually like to put component files that are used in multiple pages in the component folder. The other files can all be in the src folder, but I like to compartmentalize it in case of future developments. I try to implement good React architecture patterns to the best of my abilities and create reusable code and separate logic and renders. 
+
 ### Inspo:
 
 -   https://reactjsexample.com/tag/ecommerce/
