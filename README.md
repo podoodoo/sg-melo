@@ -65,7 +65,7 @@ For further improvements to achieve a more robust application, different shop ca
 
 How I approached creating this project was first going through some React examples of simple ecommerce sites for inspiration and to minimize reinventing the wheel. Along the way, I made a list of the tech stacks I could utilize. React & Nodejs was suggested to me from a earlier discussion so I went along with that. Vite, TailwindCSS, and Zustand were used because I wanted a truly minimal viable product. Considered were Redux and Context API for state management, MUI and ChakraUI for styling. For testing, I tried using Jest but configuring babel for Vite gave me headaches so I used Vitest. ChatGPT helped too.
 
-For file structure, I usually like to put component files that are used in multiple pages in the component folder. The other files can all be in the src folder, but I like to compartmentalize it in case of future developments. I try to implement good React architecture patterns to the best of my abilities and create reusable code and separate logic and renders. 
+For file structure, I usually like to put component files that are used in multiple pages in the component folder. The other files can all be in the src folder, but I like to compartmentalize it in case of future developments. I try to implement good React architecture patterns to create reusable code that separate logic and views. 
 
 ### Inspo:
 
