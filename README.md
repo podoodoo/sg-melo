@@ -10,7 +10,7 @@ Simple e-commerce application
 -   TailwindCSS
 -   Fake Store API (seed data)
 -   Zustand (state management)
--   Jest
+-   Vitest
 
 ## Getting Started
 
